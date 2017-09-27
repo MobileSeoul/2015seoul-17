@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/MaterialDesignLibraryTheme.Light">
+        <item name="colorPrimary">#8dd4d9</item>
+        <item name="colorPrimaryDark">#8dd4d9</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#8dd4d9</item>
+        <item name="colorPrimaryDark">#8dd4d9</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+</resources>

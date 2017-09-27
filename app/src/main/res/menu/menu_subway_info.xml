@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="subway.ggikko.com.hellosubway.subwayinfo.SubwayInfoActivity">
+
+    <item android:id="@+id/call_station" android:title="역사 전화걸기"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/call_lostitem" android:title="분실물 신고센터"
+        android:orderInCategory="200" app:showAsAction="never" />
+
+    <item android:id="@+id/call_time" android:title="열차 시간표"
+        android:orderInCategory="300" app:showAsAction="never" />
+
+</menu>

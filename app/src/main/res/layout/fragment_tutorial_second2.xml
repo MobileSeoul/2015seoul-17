@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor"
+    tools:context="subway.ggikko.com.hellosubway.tutorial.TutorialSecondFragment">
+
+    <ImageView
+        android:id="@+id/image_tutorial_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tutorial_two"/>
+
+
+</FrameLayout>

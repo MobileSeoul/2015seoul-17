@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="subway.ggikko.com.hellosubway" >
+
+    <permission
+        android:name="subway.ggikko.com.hellosubway.locationapi.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="subway.ggikko.com.hellosubway.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/location_insubway"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.IntroActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAOb9DKqHAW4JCGm2g581zH6BjfDJ5B4VM" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.InformationActivity"
+            android:label="@string/title_activity_information" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".view.TutorialActivity"
+            android:label="@string/title_activity_tutorial" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SubwayInformation"
+            android:label="@string/title_activity_subway_information" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".subwayinfo.SubwayInformation"
+            android:label="@string/title_activity_subway_information"
+            android:theme="@style/AppTheme.Base" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".subwayinfo.SubwayInfoActivity"
+            android:label="@string/title_activity_subway_info"
+            android:theme="@style/AppTheme.Base" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".subwayinfo.NeedUpdatedActivity"
+            android:label="@string/title_activity_need_updated" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.TimeManageActivity"
+            android:label="@string/title_activity_time_manage" >
+        </activity>
+    </application>
+
+</manifest>
